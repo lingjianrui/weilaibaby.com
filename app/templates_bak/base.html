@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    {% block head %}{% endblock %}
+    <!-- Favicons -->
+    <link href="{% static 'img/favicon.png' %}" rel="icon">
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic|Raleway:100,400,300,700"
+          rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="{% static 'lib/linecons/css/linecons.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/icomoon/icomoon.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/swiper/css/swiper.css' %}" rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/gallery-1.css' %}" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-offset="58" data-target="#navbar-main">
+{% block content %}{% endblock %}
+<div id="copyrights">
+    <div class="container">
+        <p>
+            &copy; Copyrights <strong>蔚来恒康（北京）母婴健康科技有限公司</strong>. All Rights Reserved
+        </p>
+        <div class="credits">
+            茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下，茁壮蔚来儿童健康管理中心是一家儿童健康管理机构，随着中国儿童政策的放宽，随着小儿推荐技术的不断诞生
+            <div><a href="">技术支持</a></div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'lib/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'lib/php-mail-form/validate.js' %}"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/swiper/js/swiper.js' %}"></script>
+<!-- Template Main Javascript File -->
+<script src="{% static 'js/main.js' %}"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 150,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-nextt',
+            prevEl: '.swiper-button-prevv',
+        },
+    });
+</script>
+</body>
+</html>

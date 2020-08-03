@@ -1,0 +1,365 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <title>首页</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+{% endblock %}
+{% block content %}
+    <!-- Fixed navbar -->
+    <div id="navbar-main">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <img class="top_logo" src="{% static 'img/logo.png' %}">
+                    </div>
+                    <div class="col-xs-6">
+                        <h5 class="text-main text-right">茁壮未来，保护宝宝健康成长.</h5>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #262626;">
+                <div class="container" style="display: flex;flex-direction: row;justify-content: center;">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav center-block">
+                            <li class="active"><a href="#home" class="smoothscroll">首页<br><span
+                                    class="text-sm">HOME</span></a></li>
+                            <li><a href="#about" class="smoothscroll">关于我们<br><span class="text-sm">ABOUT US</span></a>
+                            </li>
+                            <li><a href="#brand" class="smoothscroll">品牌优势<br><span class="text-sm">BRAND</span></a>
+                            </li>
+                            <li><a href="#project" class="smoothscroll">项目介绍<br><span class="text-sm">PROJECT</span></a>
+                            </li>
+                            <li><a href="#store" class="smoothscroll">店面展示<br><span class="text-sm">STOREDISPLAY</span></a>
+                            </li>
+                            <li><a href="#partner" class="smoothscroll">加盟合作<br><span
+                                    class="text-sm">COOMPARATION</span></a></li>
+                            <li><a href="#news" class="smoothscroll">新闻资讯<br><span class="text-sm">NEWLIST</span></a>
+                            </li>
+                            <li><a href="#contact" class="smoothscroll">联系我们<br><span class="text-sm">CONCACT</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="home" name="home" class="scrollspy"></section>
+    <div id="headerwrap">
+        <div class="container">
+            <div class="col-lg-8">
+            </div>
+            <div class="col-lg-4">
+            </div>
+        </div>
+    </div>
+    <section id="about" name="about" class="scrollspy"></section>
+    <div class="container pd-v-xlg">
+        <div class="col-sm-6">
+            <div class="flex-row">
+                <img class="wd-50px ht-50px" src="{% static 'img/icon.png' %}">
+                <div class="marg-l-def">
+                    <div class="text-h5">关于我们</div>
+                    <span>ABOUT US</span>
+                </div>
+            </div>
+            <p class="marg-t-md">
+                茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下，茁壮蔚来儿童健康管理中心是一家儿童健康管理机构，随着中国儿童政策的放宽，随着小儿推荐技术的不断诞生</p>
+            <p class="marg-t-md">
+                茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下，茁壮蔚来儿童健康管理中心是一家儿童健康管理机构，随着中国儿童政策的放宽，随着小儿推荐技术的不断诞生</p>
+            <p class="marg-t-md">
+                茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下，茁壮蔚来儿童健康管理中心是一家儿童健康管理机构，随着中国儿童政策的放宽，随着小儿推荐技术的不断诞生</p>
+        </div>
+        <div class="col-sm-6 text-right">
+            <img class="img-responsive" src="{% static 'img/video.png' %}">
+        </div>
+    </div>
+    <section id="brand" name="brand" class="scrollspy"></section>
+    <div class="container pd-v-xlg">
+        <div class="flex-row">
+            <img class="wd-50px ht-50px" src="{% static 'img/icon.png' %}">
+            <div class="marg-l-def">
+                <div class="text-h5">品牌优势</div>
+                <span>BRAND US</span>
+            </div>
+        </div>
+        <div style="height: 30px;"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/1.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h1 class="text-xh1">01</h1>
+                        <h5>完善的培训体系</h5>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训</p>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训,茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/1.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h1 class="text-xh1">01</h1>
+                        <h5>完善的培训体系</h5>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训</p>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训,茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/1.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h1 class="text-xh1">01</h1>
+                        <h5>完善的培训体系</h5>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训</p>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训,茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/1.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h1 class="text-xh1">01</h1>
+                        <h5>完善的培训体系</h5>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训</p>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训,茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/1.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h1 class="text-xh1">01</h1>
+                        <h5>完善的培训体系</h5>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训</p>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训,茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/1.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h1 class="text-xh1">01</h1>
+                        <h5>完善的培训体系</h5>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训</p>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训,茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/1.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h1 class="text-xh1">01</h1>
+                        <h5>完善的培训体系</h5>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训</p>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训,茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/1.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h1 class="text-xh1">01</h1>
+                        <h5>完善的培训体系</h5>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训</p>
+                        <p class="gallery_desc_text">专业培训，为调理师提供标准的系统培训,茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="project" name="project" class="scrollspy"></section>
+    <div class="container pd-v-xlg">
+        <div class="flex-row">
+            <img class="wd-50px ht-50px" src="{% static 'img/icon.png' %}">
+            <div class="marg-l-def">
+                <div class="text-h5">项目介绍</div>
+                <span>BRAND US</span>
+            </div>
+        </div>
+        <div style="height: 30px;"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/2.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h5 class="text-left">小儿积食调料</h5>
+                        <p class="gallery_desc_text">
+                            无论生病与否,保护脾胃,均当应为小儿调养的第一要务。即便生病而不知病因,也先将保脾放于第一位。血源于脾胃运化之水谷精华,是滋养人体、维持人体生命活动的</p>
+                        <p class="gallery_desc_text">
+                            无论生病与否,保护脾胃,均当应为小儿调养的第一要务。即便生病而不知病因,也先将保脾放于第一位。血源于脾胃运化之水谷精华,是滋养人体、维持人体生命活动的</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/2.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h5 class="text-left">小儿积食调料</h5>
+                        <p class="gallery_desc_text">
+                            无论生病与否,保护脾胃,均当应为小儿调养的第一要务。即便生病而不知病因,也先将保脾放于第一位。血源于脾胃运化之水谷精华,是滋养人体、维持人体生命活动的</p>
+                        <p class="gallery_desc_text">
+                            无论生病与否,保护脾胃,均当应为小儿调养的第一要务。即便生病而不知病因,也先将保脾放于第一位。血源于脾胃运化之水谷精华,是滋养人体、维持人体生命活动的</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/2.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h5 class="text-left">小儿积食调料</h5>
+                        <p class="gallery_desc_text">
+                            无论生病与否,保护脾胃,均当应为小儿调养的第一要务。即便生病而不知病因,也先将保脾放于第一位。血源于脾胃运化之水谷精华,是滋养人体、维持人体生命活动的</p>
+                        <p class="gallery_desc_text">
+                            无论生病与否,保护脾胃,均当应为小儿调养的第一要务。即便生病而不知病因,也先将保脾放于第一位。血源于脾胃运化之水谷精华,是滋养人体、维持人体生命活动的</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="{% static 'img/2.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+                    <div class="image-overlay"></div>
+                    <div class="gallery-text-wrap">
+                        <h5 class="text-left">小儿积食调料</h5>
+                        <p class="gallery_desc_text">
+                            无论生病与否,保护脾胃,均当应为小儿调养的第一要务。即便生病而不知病因,也先将保脾放于第一位。血源于脾胃运化之水谷精华,是滋养人体、维持人体生命活动的</p>
+                        <p class="gallery_desc_text">
+                            无论生病与否,保护脾胃,均当应为小儿调养的第一要务。即便生病而不知病因,也先将保脾放于第一位。血源于脾胃运化之水谷精华,是滋养人体、维持人体生命活动的</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section id="store" name="store" class="scrollspy"></section>
+    <div class="container pd-v-xlg">
+        <div class="flex-row">
+            <img class="wd-50px ht-50px" src="{% static 'img/icon.png' %}">
+            <div class="marg-l-def">
+                <div class="text-h5">店面展示</div>
+                <span>STORE DISPLAY</span>
+            </div>
+        </div>
+    </div>
+    <div class="pd-v-xlg bg-light-gray">
+        <div class="container" style="position: relative;">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="{% static 'img/store/store.png' %}"></div>
+                    <div class="swiper-slide"><img src="{% static 'img/store/store1.png' %}"></div>
+                    <div class="swiper-slide"><img src="{% static 'img/store/store2.png' %}"></div>
+                </div>
+            </div>
+            <div class="swiper-button-prevv"></div>
+            <div class="swiper-button-nextt"></div>
+        </div>
+    </div>
+    <section id="partner" name="partner" class="scrollspy"></section>
+    <div class="fixed_bg_img">
+        <div class="container pd-v-xlg">
+            <div class="flex-row">
+                <img class="wd-50px ht-50px" src="{% static 'img/icon.png' %}">
+                <div class="marg-l-def">
+                    <div class="text-h5 text-main">加盟合作</div>
+                    <span class="text-main">COOPERATION</span>
+                </div>
+            </div>
+            <div class="flex-row pd-v-xlg" style="align-items: center;justify-content: center;">
+                <img class="liucheng_img" src="{% static 'img/licheng.png' %}">
+            </div>
+        </div>
+    </div>
+    <section id="news" name="news" class="scrollspy"></section>
+    <div class="container pd-v-xlg bg-light-gray">
+        <div class="flex-row pd-b-def">
+            <img class="wd-50px ht-50px" src="{% static 'img/icon.png' %}">
+            <div class="marg-l-def">
+                <div class="text-h5">新闻资讯</div>
+                <span>NEWS</span>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <ul class="new_list">
+                {% for article in articles %}
+                    <li><a href="{% url 'article' article.id %}">{{ article.title }}</a></li>
+                {% empty %}
+                    <li><a href="#">暂无新闻</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+            <img class="img-responsive" src="{% static 'img/new_img.png' %}">
+        </div>
+    </div>
+    <section id="contact" name="contact" class="scrollspy"></section>
+    <div class="container pd-v-xlg">
+        <div class="flex-row pd-b-def">
+            <img class="wd-50px ht-50px" src="{% static 'img/icon.png' %}">
+            <div class="marg-l-def">
+                <div class="text-h5">联系我们</div>
+                <span>CONCAT US</span>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="flex-column pd-v-xlg" style="justify-content: center;align-items: center;">
+                <img style="width: 150px;height: 150px;" src="{% static 'img/qrcode.png' %}">
+                <p>微信公众号</p>
+            </div>
+            <div>
+                <p>电话：23423434232</p>
+                <p>地址：北京市亦庄经济开发区经海四路天道联合大厦</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+            <iframe src="{% url 'map' %}" width="600" height="300" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+{% endblock %}
