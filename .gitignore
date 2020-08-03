@@ -1,3 +1,4 @@
 venv
-static_bak
+.DS_Store
+__pycache__
 
