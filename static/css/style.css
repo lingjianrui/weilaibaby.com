@@ -78,13 +78,12 @@ h6 {
     padding-left: 100px;
     padding-right: 100px;
     width: 100%;
-    height: 100%;
+    height: 400px;
 }
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -110,7 +109,7 @@ h6 {
 
 .swiper-slide-active,
 .swiper-slide-duplicate-active {
-    transform: scale(1.5);
+    transform: scale(1.7);
 }
 
 .swiper-button-prevv, .swiper-button-nextt {
@@ -138,10 +137,6 @@ h6 {
     left: auto;
 }
 
-.liucheng_img {
-    width: 600px;
-    height: auto;
-}
 
 .new_list {
     margin-top: 20px;
@@ -167,7 +162,6 @@ h6 {
 }
 
 .fixed_bg_img {
-    height: 650px;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
@@ -254,17 +248,25 @@ hr {
 }
 
 .top_logo {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
 }
 
 /* ========== Bootstrap Modifications ========== */
 
 .navbar-default {
-    background-color: #fff;
+    background:transparent !important;
     border-color: #e7e7e7;
 }
-
+.navbar-default .navbar-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+}
+.navbar-default .navbar-nav > li{
+    min-width: 100px;
+}
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li:hover > a {
     color: #ffffff;
@@ -832,7 +834,10 @@ licon {
         position: relative;
         text-align: center;
     }
+
+
 }
+
 
 /* =========== SPECIAL Media Queries for APP Showcase ============ */
 
@@ -871,6 +876,9 @@ licon {
 
     .ac-grid a {
         width: 22%;
+    }
+    .navbar-default .navbar-nav{
+        display: block;
     }
 }
 

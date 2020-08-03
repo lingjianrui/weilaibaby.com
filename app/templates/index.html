@@ -9,11 +9,13 @@
     <!-- Fixed navbar -->
     <div id="navbar-main">
         <div class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <img class="top_logo" src="{% static 'img/logo.png' %}">
-                <h5 class="text-main pull-right">茁壮未来，保护宝宝健康成长.</h5>
+            <div style="background-color:#fff;">
+                <div class="container flex-row" style="align-items: center;">
+                    <img class="top_logo" src="{% static 'img/logo.png' %}">
+                    <h5 class="text-main flex-item text-right">茁壮未来，保护宝宝健康成长.</h5>
+                </div>
             </div>
-            <div style="background-color: #262626;">
+            <div style="background-color: rgba(0,0,0,0.8);">
                 <div class="container top_main_nav_warp" >
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -59,7 +61,7 @@
     </div>
     <section id="about" name="about" class="scrollspy"></section>
     <div class="container pd-v-xlg">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
             <div class="flex-row">
                 <img class="wd-50px ht-50px" src="{% static 'img/icon.png' %}">
                 <div class="marg-l-def">
@@ -67,6 +69,8 @@
                     <span>ABOUT US</span>
                 </div>
             </div>
+        </div>
+        <div class="col-sm-6">
             <p class="marg-t-md">
                 茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下，茁壮蔚来儿童健康管理中心是一家儿童健康管理机构，随着中国儿童政策的放宽，随着小儿推荐技术的不断诞生</p>
             <p class="marg-t-md">
@@ -74,8 +78,10 @@
             <p class="marg-t-md">
                 茁壮未来儿童健康管理机构隶属蔚来恒康（北京）母婴健康科技有限公司旗下，茁壮蔚来儿童健康管理中心是一家儿童健康管理机构，随着中国儿童政策的放宽，随着小儿推荐技术的不断诞生</p>
         </div>
-        <div class="col-sm-6 text-right">
-            <img class="img-responsive" src="{% static 'img/video.png' %}">
+        <div class="col-sm-6">
+            <video style="flex:1; width:100%;height:auto;" controls="controls" src="https://vdse.bdstatic.com//4f49b1420db8bf2dd7a519b6e45cb513.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2020-08-01T18%3A26%3A08Z%2F-1%2Fhost%2F9d88d42352b10618f3e9e1193f234412e0fc347fd503a1612c58c9cd2e909008">
+                您的浏览器不支持 video
+            </video>
         </div>
     </div>
     <section id="brand" name="brand" class="scrollspy"></section>
@@ -307,7 +313,7 @@
                 </div>
             </div>
             <div class="flex-row pd-v-xlg" style="align-items: center;justify-content: center;">
-                <img class="img-responsive" src="{% static 'img/licheng.png' %}">
+                <img class="img-responsive" style="max-width: 600px;" src="{% static 'img/licheng.png' %}">
             </div>
         </div>
     </div>

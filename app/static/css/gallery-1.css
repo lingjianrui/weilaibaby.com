@@ -55,17 +55,16 @@
 
 .gallery-item .gallery-thumb .gallery-text-wrap {
 	display: flex;
+    flex-direction: column;
 	align-items: center;
     width: 100%;
     height: 100%;
     text-align: center;
-    display: none;
-    line-height: 45px;
+    justify-content: center;
     position: absolute;
     padding: 20px;
     font-size: 18px;
     color: #fff;
-    display: block;
     border-radius: 2px;
 }
 
@@ -79,7 +78,6 @@
 
 
 .gallery-item:hover .gallery-thumb .gallery-text-wrap {
-    display: block;
     top: 0;
     bottom: 0;
 }
