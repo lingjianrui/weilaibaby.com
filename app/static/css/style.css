@@ -81,7 +81,7 @@ h6 {
     height: 400px;
 }
 
-.swiper-slide {
+.swiper-container .swiper-slide {
     text-align: center;
     font-size: 18px;
 
@@ -102,13 +102,13 @@ h6 {
     transform: scale(0.8);
 }
 
-.swiper-slide img {
+.swiper-container .swiper-slide img {
     width: 300px;
     height: 180px;
 }
 
-.swiper-slide-active,
-.swiper-slide-duplicate-active {
+.swiper-container .swiper-slide-active,
+.swiper-container .swiper-slide-duplicate-active {
     transform: scale(1.7);
 }
 
@@ -157,7 +157,7 @@ h6 {
     background-color: #e3e5e6;
 }
 
-.bg-app{
+.bg-app {
     background-color: #145045;
 }
 
@@ -255,18 +255,21 @@ hr {
 /* ========== Bootstrap Modifications ========== */
 
 .navbar-default {
-    background:transparent !important;
+    background: transparent !important;
     border-color: #e7e7e7;
 }
-.navbar-default .navbar-nav{
-    display:flex;
+
+.navbar-default .navbar-nav {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width:100%;
+    width: 100%;
 }
-.navbar-default .navbar-nav > li{
+
+.navbar-default .navbar-nav > li {
     min-width: 100px;
 }
+
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li:hover > a {
     color: #ffffff;
@@ -332,40 +335,39 @@ hr {
 /* ========== WRAP Configuration ========== */
 
 #headerwrap {
-    background: url(../img/header_bg.png) no-repeat center top;
     margin-top: -50px;
-    padding-top: 120px;
-    text-align: center;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 700px;
+    padding-top: 165px;
     width: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
-#headerwrap h1 {
-    color: #ffffff;
-    font-size: 45px;
-    font-weight: 900;
-    line-height: 50px;
-    text-align: left;
-    padding-top: 30px;
-    letter-spacing: 3px;
+.swiper-container2 {
+    width: 100%;
+    height: 100%;
 }
 
-#headerwrap p {
-    color: #ffffff;
+.swiper-container2 .swiper-slide {
+    text-align: center;
     font-size: 18px;
-    line-height: 24px;
-    text-align: left;
-    letter-spacing: 1px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-container2 .swiper-slide img {
+    width: 100%;
+    height: 700px;
 }
 
 .video {
@@ -877,7 +879,8 @@ licon {
     .ac-grid a {
         width: 22%;
     }
-    .navbar-default .navbar-nav{
+
+    .navbar-default .navbar-nav {
         display: block;
     }
 }
