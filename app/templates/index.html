@@ -52,12 +52,11 @@
     </div>
     <section id="home" name="home" class="scrollspy"></section>
     <div id="headerwrap">
-        <div class="swiper-container2">
+        <div class="swiper-container swiper2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img class="img-responsive" src="{% static 'img/header_bg.png' %}"></div>
                 <div class="swiper-slide"><img class="img-responsive" src="{% static 'img/header_bg2.jpg' %}"></div>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
     </div>
     <section id="about" name="about" class="scrollspy"></section>
@@ -283,7 +282,7 @@
     </div>
     <div class="pd-v-xlg bg-light-gray hidden-xs">
         <div class="container" style="position: relative;">
-            <div class="swiper-container">
+            <div class="swiper-container swiper1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="{% static 'img/store/store.png' %}"></div>
                     <div class="swiper-slide"><img src="{% static 'img/store/store1.png' %}"></div>
@@ -304,8 +303,10 @@
                     <span class="text-main">COOPERATION</span>
                 </div>
             </div>
-            <div class="flex-row pd-v-xlg" style="align-items: center;justify-content: center;">
-                <img class="img-responsive" style="max-width: 600px;" src="{% static 'img/licheng.png' %}">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <img class="img-responsive"  src="{% static 'img/licheng.png' %}">
+                </div>
             </div>
         </div>
     </div>
@@ -353,7 +354,7 @@
                 <p>地址：北京市亦庄经济开发区经海四路天道联合大厦</p>
             </div>
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+        <div class="col-md-6 col-sm-6 col-xs-12 hidden-xs">
             <iframe src="{% url 'map' %}" width="100%" height="300" frameborder="0" scrolling="no"></iframe>
         </div>
     </div>

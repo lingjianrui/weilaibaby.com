@@ -43,7 +43,7 @@
 <!-- Template Main Javascript File -->
 <script src="{% static 'js/main.js' %}"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper1', {
         slidesPerView: 3,
         spaceBetween: 230,
         centeredSlides: true,
@@ -53,14 +53,10 @@
             prevEl: '.swiper-button-prevv',
         },
     });
-    var swiper2 = new Swiper('.swiper-container2', {
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-        },
+    var swiper2 = new Swiper('.swiper2',{
+      autoplay: {
+        delay: 3000,
+      },
     });
 </script>
 </body>

@@ -74,14 +74,14 @@ h6 {
     text-align: left;
 }
 
-.swiper-container {
+.swiper1 {
     padding-left: 100px;
     padding-right: 100px;
     width: 100%;
     height: 400px;
 }
 
-.swiper-container .swiper-slide {
+.swiper1 .swiper-slide {
     text-align: center;
     font-size: 18px;
 
@@ -102,13 +102,13 @@ h6 {
     transform: scale(0.8);
 }
 
-.swiper-container .swiper-slide img {
+.swiper1 .swiper-slide img {
     width: 300px;
     height: 180px;
 }
 
-.swiper-container .swiper-slide-active,
-.swiper-container .swiper-slide-duplicate-active {
+.swiper1 .swiper-slide-active,
+.swiper1 .swiper-slide-duplicate-active {
     transform: scale(1.7);
 }
 
@@ -140,6 +140,7 @@ h6 {
 
 .new_list {
     margin-top: 20px;
+    padding-left:0px;
 }
 
 .new_list li {
@@ -335,34 +336,11 @@ hr {
 /* ========== WRAP Configuration ========== */
 
 #headerwrap {
-    padding-top: 100px;
+    padding-top: 90px;
     width: 100%;
 }
 
-.swiper-container2 {
-    width: 100%;
-    height: 100%;
-}
 
-.swiper-container2 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
 
 
 
